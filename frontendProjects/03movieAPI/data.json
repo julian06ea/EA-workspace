@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "tittel": "Harry Potter og de vises stein",
+        "beskrivelse": "Den første filmen i Harry Potter-serien."
+    },
+    {
+        "id": 2,
+        "tittel": "Ringenes Herre: Ringens Brorskap",
+        "beskrivelse": "En episk fantasyfilm basert på Tolkiens roman."
+    },
+    {
+        "id": 3,
+        "tittel": "Inception",
+        "beskrivelse": "En sci-fi thriller om drømmer og virkelighet."
+    }
+]

@@ -1,0 +1,34 @@
+<diagram program="umletino" version="15.1"><zoom_level>13</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>52</x><y>494</y><w>286</w><h>247</h></coordinates><panel_attributes>Ball
+--
++ x: int
++ y: int
++ speedX: int
++ speedY: int
++ ballDiv: HtmlElement
+--
++ lagTilfeldigFarge()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>195</x><y>13</y><w>286</w><h>325</h></coordinates><panel_attributes>Spill
+--
++ fart: int
++ hoyde: int
++ bredde: int
++ spillbettDiv: HtmlElement
++ padde: Object
++ baller: []
++ intervallID: int
+--
+
++ start()
++ leggTilBall()
++ sjekkKolisjonOgFlyttBall
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>169</x><y>325</y><w>182</w><h>195</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1.1
+m2=0..n
+</panel_attributes><additional_attributes>120;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>494</y><w>286</w><h>247</h></coordinates><panel_attributes>Padde
+--
++ flytteLengde: int
++ paddeDiv: HtmlElement
+--
++ flyttPadde()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>364</x><y>325</y><w>208</w><h>195</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1.1
+m2=0..n
+</panel_attributes><additional_attributes>10;10;140;130</additional_attributes></element></diagram>

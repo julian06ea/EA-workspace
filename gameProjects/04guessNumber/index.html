@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øvelse 39</title>
+    <link rel="stylesheet" href="oppg39.css">
+</head>
+<body>
+    <div id="spillbrett">
+        <h1>Gjette tall</h1>
+        <p>Datamaskinen har plukket ut et tilfeldig positivt heltall. Finn dette tallet!</p>
+        <p id="melding"> &nbsp;</p>
+        <div>
+            Ditt forslag til tall: <input type="number" id="gjettTall">
+        </div>
+        <input id="btnBekreft" type="button" value="Bekreft valg" onclick="btnBekreftValg_onclick()">
+        <input id="btnNy" type="button" value="Nytt spill" onclick="btnNy_onclick()">
+    </div>
+    <script src="oppg39.js"></script>
+</body>
+</html>

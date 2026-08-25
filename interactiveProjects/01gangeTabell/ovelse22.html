@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øvelse 22</title>
+    <style>
+        table {
+            width: 600px;
+        }
+    </style>
+    <script>
+        function btn5gangen_onclick() {
+            var svar, gangen, tekst; 
+            gangen = 5;
+            tekst="";
+            for (let i = 1; i <= 10; i++) {
+                svar = gangen * i;
+                tekst += i + " * " + gangen + " = " + svar + "<br>";
+            } 
+            document.getElementById("melding").innerHTML = tekst;  
+        }
+        function btnVisOppgitt_onclick() {
+            var svar, inpGangeTab, tekst;
+            inpGangeTab = document.getElementById("inpGangeTab").valueAsNumber;
+            tekst ="";
+            for (let i = 1; i <= 10; i++){
+                svar = inpGangeTab * i;
+                tekst += i + " * " + inpGangeTab + " = " + svar + "<br>";
+            }
+            document.getElementById("melding").innerHTML = tekst; 
+        }
+        function btnHele_onclick() {
+            var svar, gangen, tekst;
+            tekst="";
+            for (let i = 1; i <= 10; i++){
+                for (gangen = 1; gangen <= 10; gangen++) {
+                    svar = gangen * i;
+                    tekst += i +  " * " + gangen + " = " + svar + "<br>";
+                }
+                tekst += "<br><br>";
+            }
+            document.getElementById("melding").innerHTML = tekst;
+        }
+        function btnSortert_onclick() {
+                var svar, gangen, tekst;
+                tekst="<table>";
+                for(let i = 1; i<=10;i++) { 
+                    tekst +="<tr>";
+                    for(gangen = 1; gangen <= 5;gangen++) {
+                        svar = gangen*i;
+                        tekst += "<td>"+ gangen + " * " + i +" = " + svar +"</td>";
+                    }
+                    tekst +="</tr>";
+                }
+                tekst+="<tr style='height:30px;'><td></td><td></td><td></td><td></td><td></td></tr>";
+                for(let i = 1; i<=10;i++) { 
+                    tekst +="<tr>";
+                    for(gangen = 6; gangen <= 10;gangen++) {
+                        svar = gangen*i;
+                        tekst += "<td>"+ gangen + " * " + i +" = " + svar +"</td>";
+                    }
+                    tekst +="</tr>";
+                }
+                tekst+="</table>";
+                document.getElementById("melding").innerHTML = tekst;
+            }
+    </script>
+</head>
+<body>
+    <button onclick="btn5gangen_onclick()">Vis 5-gangen</button>
+    <button onclick="btnVisOppgitt_onclick()">Vis oppgitt-gangen</button>
+    <button onclick="btnHele_onclick()">Vis hele gangen-tabellen</button>
+    <button onclick="btnSortert_onclick()">Vis gangetabellen sortert</button>
+
+    <input type="number" id="inpGangeTab" style="position: absolute;top: 50px; left: 100px;">
+    
+    <div id="melding" style="position: absolute; top: 150px; left: 50px;">her kommer ...</div>
+</body>
+</html>

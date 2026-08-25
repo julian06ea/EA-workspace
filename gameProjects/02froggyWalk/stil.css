@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+#spill {
+    position: relative;
+    width: 480px;
+    height: 600px;
+    background-image: url("media/Vei.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#bil1 {
+    position:absolute;
+    top: 195px;
+    left:480px;
+}
+#bil2 {
+    position:absolute;
+    top: 250px;
+    left:480px;
+}
+#bil3 {
+    position:absolute;
+    top: 298px;
+    left:480px;
+}
+#bil4 {
+    position:absolute;
+    top: 355px;
+    left:480px;
+}
+#bil5 {
+    position:absolute;
+    top: 406px;
+    left:480px;
+}
+#frosk {
+    position: absolute;
+    top:460px;
+    left:200px;
+}
+#insekt {
+    position: absolute;
+    top:120px;
+    left:200px;
+    height: 60px;
+}

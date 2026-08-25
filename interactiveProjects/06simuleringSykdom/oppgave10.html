@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smitte Simulering</title>
+    <style>
+        .person {
+            font-size: 20px;
+            padding: 5px;
+            margin: 1px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+        }
+        .lys-grå { background-color: lightgray; }
+        .rosa { background-color: pink; color: black; }
+        .rød { background-color: red; color: white; }
+        .mørk-grå { background-color: darkgray; color: white; }
+        .svart { background-color: black; color: white; }
+    </style>
+</head>
+<body>
+
+    <h1>Smitte Simulering</h1>
+    <div id="populasjon"></div>
+    <button id="startButton">Start Simulering</button>
+    <button id="stopButton" style="display:none;">Stopp Simulering</button>
+
+    <script>
+        class Person {
+            constructor() {
+                this.state = 'frisk uten immunitet'; // 'frisk uten immunitet', 'smittet', 'syk', 'frisk med immunitet', 'død'
+                this.daysSick = 0;
+                this.daysInfected = 0;
+            }
+
+            infect() {
+                if (this.state === 'frisk uten immunitet') {
+                    this.state = 'smittet'; 
+                    this.daysInfected = 0;
+                }
+            }
+
+            update() {
+                if (this.state === 'smittet') {
+                    this.daysInfected++;
+                    if (this.daysInfected >= 3) {
+                        this.state = 'syk'; 
+                    }
+                }
+
+                if (this.state === 'syk') {
+                    this.daysSick++;
+                    if (Math.random() < 0.01) {
+                        this.state = 'død'; 
+                    } else if (this.daysSick >= 4) {
+                        this.state = 'frisk med immunitet'; 
+                    }
+                }
+            }
+
+            getStatus() {
+                switch (this.state) {
+                    case 'frisk uten immunitet':
+                        return { status: 'Frisk uten immunitet', class: 'lys-grå' };
+                    case 'smittet':
+                        return { status: 'Smittet', class: 'rosa' };
+                    case 'syk':
+                        return { status: 'Syk', class: 'rød' };
+                    case 'frisk med immunitet':
+                        return { status: 'Frisk med immunitet', class: 'mørk-grå' };
+                    case 'død':
+                        return { status: 'Død', class: 'svart' };
+                    default:
+                        return { status: 'Ukjent tilstand', class: '' };
+                }
+            }
+        }
+
+        class Populasjon {
+            constructor(size = 49) {
+                this.size = size;
+                this.grid = this.createGrid();
+                this.simulationInterval = null;
+            }
+
+            createGrid() {
+                let grid = [];
+                for (let i = 0; i < this.size; i++) {
+                    let row = [];
+                    for (let j = 0; j < this.size; j++) {
+                        row.push(new Person());
+                    }
+                    grid.push(row);
+                }
+                return grid;
+            }
+
+            infectNeighbors(i, j) {
+                const neighbors = [
+                    [-1, 0], [1, 0], [0, -1], [0, 1]
+                ];
+
+                for (let [dx, dy] of neighbors) {
+                    const ni = i + dx;
+                    const nj = j + dy;
+
+                    if (ni >= 0 && ni < this.size && nj >= 0 && nj < this.size) {
+                        const neighbor = this.grid[ni][nj];
+                        if (neighbor.state === 'frisk uten immunitet' && Math.random() < 0.3) {
+                            neighbor.infect();
+                        }
+                    }
+                }
+            }
+
+            update() {
+                for (let i = 0; i < this.size; i++) {
+                    for (let j = 0; j < this.size; j++) {
+                        const person = this.grid[i][j];
+                        person.update();
+                        if (person.state === 'smittet' || person.state === 'syk') {
+                            this.infectNeighbors(i, j);
+                        }
+                    }
+                }
+            }
+
+            display() {
+                const container = document.getElementById('populasjon');
+                container.innerHTML = '';
+                for (let i = 0; i < this.size; i++) {
+                    for (let j = 0; j < this.size; j++) {
+                        const person = this.grid[i][j];
+                        const div = document.createElement('div');
+                        div.classList.add('person');
+                        const status = person.getStatus();
+                        div.textContent = status.status.charAt(0);
+                        div.classList.add(status.class);
+                        container.appendChild(div);
+                    }
+                    container.appendChild(document.createElement('br'));
+                }
+            }
+
+            startSimulation() {
+                const middle = Math.floor(this.size / 2);
+                this.grid[middle][middle].state = 'syk';
+
+                // Plassere smittede personer rundt den syke personen
+                this.grid[middle-1][middle].state = 'smittet';
+                this.grid[middle+1][middle].state = 'smittet';
+                this.grid[middle][middle-1].state = 'smittet';
+                this.grid[middle][middle+1].state = 'smittet';
+
+                this.display();
+                this.simulationInterval = setInterval(() => {
+                    this.update();
+                    this.display();
+                }, 1000); // Oppdater hver sekund
+                document.getElementById('stopButton').style.display = 'inline'; // Vis stopp-knappen
+                document.getElementById('startButton').style.display = 'none'; // Skjul start-knappen
+            }
+
+            stopSimulation() {
+                clearInterval(this.simulationInterval);
+                this.simulationInterval = null;
+                document.getElementById('stopButton').style.display = 'none'; // Skjul stopp-knappen
+                document.getElementById('startButton').style.display = 'inline'; // Vis start-knappen igjen
+            }
+        }
+
+        const populasjon = new Populasjon();
+
+        document.getElementById('startButton').addEventListener('click', () => {
+            populasjon.startSimulation();
+        });
+
+        document.getElementById('stopButton').addEventListener('click', () => {
+            populasjon.stopSimulation();
+        });
+    </script>
+</body>
+</html>

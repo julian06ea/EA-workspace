@@ -1,0 +1,12 @@
+#tab {
+    margin-top:40px;
+    border-collapse: collapse;
+}
+#tab th {
+    background-color: #f3f3eb;
+}
+#tab th, #tab td {
+    border: 1px solid #c8c9be;
+    padding:4px;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+#spillbrett {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    margin-bottom: 10px;
+  }
+  .celle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 20px;
+  }

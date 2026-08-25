@@ -1,0 +1,182 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    color: black;
+    line-height: 40px;
+}
+
+.forsBildet {
+    height: 530px;
+    width: 100%;
+    background-image: url("Images/bakgrunn1.png");
+    text-align: center;
+    display: flex;
+    justify-content: first baseline;
+}
+
+.dresstransp {
+    height: 510px;
+    width: 765px;
+    margin-top: 10px;
+    float: left;
+    position: sticky;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: navy;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    padding-bottom: 1;
+}
+
+.logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+    height: 60px;
+}
+
+a {
+    margin: 20px;
+}
+
+.headercont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.forstekst {
+    max-width: 500px;
+}
+
+hr {
+    border: solid white 1px;
+
+    width: 60px;
+}
+
+.forstekstcont {
+    width: 100%;
+    position: sticky;
+    margin-top: 20px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: lighter;
+    line-height: normal;
+}
+
+.forsinfo {
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.forsinfotekst {
+    max-width: 990px;
+    min-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 16px;
+    color: steelblue;
+}
+
+.forsinfotekst p {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.forsinfotekst a {
+    margin: 0;
+    color: #1a6fba;
+}
+
+.footerimg {
+    width: 100%;
+}
+
+footer {
+    background-color: #222222;
+}
+
+.footercont {
+    min-width: 310px;
+    max-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 310px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+}
+
+footer p {
+    color: white;
+}
+
+h5 {
+    font-size: 18px;
+    color: white;
+    height: min-content;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+footer a {
+    margin: 0;
+    color: #1a6fba;
+}
+
+.nettsidekartlink {
+    text-wrap: balance;
+}
+
+footer p {
+    margin: 0;
+    margin-left: 40px;
+
+}
+
+p.to {
+    margin: 0;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øvelse 36- Valutakalkulator</title>
+    <link rel="stylesheet" href="valuta.css">
+    <script src="valuta.js"></script>
+</head>
+<body onload="body_onload()">
+    <fieldset>
+        <legend>Registrere kurser</legend>
+        <table>
+            <tr>
+                <td>Landkode:</td>
+                <td><input id="landkode" type="text"></td>
+            </tr>
+            <tr>
+                <td>Kurs:</td>
+                <td><input id="kurs" type="number"></td>
+            </tr>
+            <tr>
+                <td>Faktor:</td>
+                <td><input id="faktor" type="number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="btnLagre_onclick()">Lagre</button>
+                    <button onclick="btnNy_onclick()">Ny</button> <br>
+                    <button onclick="btnForrige_onclick()"><<</button>
+                    <button onclick="btnNeste_onclick()">>></button> 
+                    <span id="sLokasjon">Post 1 av 1</span>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Beregne valuta</legend>
+        <table>
+            <tr>
+                <td>Norske kroner:</td>
+                <td><input type="number" id="norskeKr"></td>
+            </tr>
+            <tr>
+                <td>Landkode:</td>
+                <td><select id="selLand">
+                   
+                </select>
+                <button style="margin-left: 150px;" onclick="btnBeregn_onclick()">Beregn</button>
+                </td>
+            </tr>
+        </table>
+        <p id="melding"></p>
+    </fieldset>
+</body>
+</html>

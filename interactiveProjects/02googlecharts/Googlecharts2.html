@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eksempel 39</title>
+    <meta charset="utf-8" />
+    <style>
+        .Felt {
+            width: 150px;
+            padding: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Diagram</h1>
+
+    <span class="Felt">Selger:</span>
+    <input type="text" id="inpSelger">
+    <br>
+
+    <span class="Felt">Salgssum:</span>
+    <input type="number" id="inpSalgssum">
+    <input id="btnNy" type="button" value="Tilføy selger" onclick="btnNy_click()">
+    <input id="btnSlette" type="button" value="Slett selgerne" onclick="btnSlette_onclick()" style="margin-left:40px">
+    <br>
+
+    <input id="btnVis" type="button" value="Vis diagram" onclick="visChart()">
+    <div id="chart_div"></div>
+
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript">
+        class Selger {
+            constructor(selger, salgssum) {
+                this.selger = selger;
+                this.salgssum = salgssum;
+            }
+        }
+
+        var selgerTab = [];
+
+        // Åpne Visualization API og corechart package.
+        google.charts.load('current', { 'packages': ['corechart'] });
+
+        function visChart() {
+            let data = new google.visualization.DataTable();
+            data.addColumn('string', 'Selger');
+            data.addColumn('number', 'Salg');
+            for (let i = 0; i < selgerTab.length; i++) {
+                data.addRow([selgerTab[i].selger, selgerTab[i].salgssum]);
+            }
+
+            let options = {
+                'title': 'Salgsoversikt selgere',
+                'width': 500,
+                'height': 300
+            };
+
+            let chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+
+        function btnNy_click() {
+            let navn = document.getElementById("inpSelger").value;
+            let salg = document.getElementById("inpSalgssum").valueAsNumber;
+            selgerTab.push(new Selger(navn, salg));
+            document.getElementById("inpSelger").value = "";
+            document.getElementById("inpSalgssum").value = "";
+            document.getElementById("inpSelger").focus();
+        }
+
+        function btnSlette_onclick() {
+            selgerTab = [];
+            visChart();
+        }
+    </script>
+</body>
+</html>

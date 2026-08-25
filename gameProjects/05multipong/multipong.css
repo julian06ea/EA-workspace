@@ -1,0 +1,20 @@
+#spill {
+    width: 500px;
+    height: 700px;
+    background-color: black;
+    position: relative;
+}
+#padde {
+    width: 100px;
+    height: 15px;
+    background-color: skyblue;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+.ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 5%;
+    position: absolute;
+}

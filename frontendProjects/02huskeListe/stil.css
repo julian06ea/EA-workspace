@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 50px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+button {
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+#buttons button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+#buttons button:hover {
+    background-color: #007c8a;
+}
+#oppgavetekst {
+    padding: 7px;
+    font-size: 14px;
+    width: 450px;
+}
+h1 {
+    font-size: 50px;
+}
+#huskeListe {
+    list-style-type: none;
+    padding: 0;
+}
+#huskeListe li {
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+#huskeListe span {
+    width: 460px;
+    text-align: left;
+    display: inline-block;
+    color: black;
+}
+#huskeListe button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    font-size: 18px;
+}
+.ferdig {
+    background-color: #d4edda;
+}
+.ferdig span {
+    text-decoration: line-through;
+}
+.klar {
+    background-color: white;
+}

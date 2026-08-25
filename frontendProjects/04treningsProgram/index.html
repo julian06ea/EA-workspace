@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Treningsøkt</title>
+    <link rel="stylesheet" href="trening.css">
+</head>
+<body>
+    <h2>Registrere treningsøkt</h2>
+    <p>I denne applikasjon kan du sette sammen et treningsprogram for én enkelt øvelse i styrketrening.</p>
+    <select id="Muskelgruppe" onchange="fyllSelect(this.selectedIndex)">
+        <option>Armer</option>
+        <option>Skuldre</option>
+        <option>Ben</option>
+        <option>Rygg</option>
+        <option>Bryst</option>
+    </select>
+    <select id="Ovelser" onchange="visOvelse()"></select>
+    <p></p>
+    <p id="pMelding"></p>
+
+    <table>
+        <tr>
+            <td>Repetisjoner</td>
+            <td><input id="antRep" type="number"></td>
+        </tr>
+        <tr>
+            <td>Motstand</td>
+            <td><input id="Motstand" type="number"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input  type="button" value="Registrer" onclick="btnRegistrer_onclick()"></td>
+        </tr>   
+    </table>
+    
+    <div id="utskrift">
+    </div>
+
+    <script src="kode.js"></script>
+</body>
+
+</html>

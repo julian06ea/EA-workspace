@@ -1,0 +1,92 @@
+/* Generelle stilinnstillinger */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Spillområdet */
+#gameArea {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: #87CEFA; /* Lyseblå bakgrunn */
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Kurven */
+.basket {
+    width: 120px;
+    height: 20px;
+    background-color: #8B4513; /* Brun kurv */
+    position: absolute;
+    bottom: 10px; /* Litt margin fra bunnen */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Fruktene */
+.fruit {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transition: top 0.2s ease-in-out;
+}
+
+.apple {
+    background-color: #FF6347; /* Rød eple */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banana {
+    background-color: #FFD700; /* Gul banan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Startknappen */
+#startBtn {
+    background-color: #28a745; /* Grønn bakgrunn */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#startBtn:hover {
+    background-color: #218838; /* Mørkere grønn ved hover */
+}
+
+/* Score og liv */
+.scoreboard {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.scoreboard span {
+    color: #FF6347; /* Eple-rød farge for poeng */
+}
+
+/* Game Over tekst */
+.hidden {
+    display: none;
+}
+
+.gameOver {
+    font-size: 36px;
+    color: #FF0000; /* Rød farge for Game Over */
+    font-weight: bold;
+    margin-top: 30px;
+}

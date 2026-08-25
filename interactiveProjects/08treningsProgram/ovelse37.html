@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Øvelse 37</title>
+    <style>
+      #tab {
+        border-collapse: collapse;
+      }
+      #tab,
+      #tab th,
+      #tab td {
+        border: solid blue;
+      }
+      #tab th,
+      #tab td {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center;
+      }
+
+      #tab th {
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      var totalVolum = 0;
+
+      function selKropp_onchange() {
+        const selKropp = document.getElementById("selKropp").value;
+
+        const Ovelse = {
+          Armer: ["Bicepcurls med stang", "Fransk press"],
+          Skuldre: ["Stående militærpress", "Sidehev"],
+          Ben: ["Knebøy", "Legextensions", "Leg curl"],
+          Rygg: ["Nedtrekk", "Roing", "Benkpress"],
+          Bryst: ["Flyes", "Pushups"],
+        };
+
+        const ovelseSelect = document.getElementById("selOvelse");
+        ovelseSelect.innerHTML = "";
+
+        const ovelser = Ovelse[selKropp] || [];
+        ovelser.forEach((ovelse) => {
+          const option = document.createElement("option");
+          option.value = ovelse;
+          option.textContent = ovelse;
+          ovelseSelect.appendChild(option);
+        });
+      }
+
+      function btnRegistrer_onclick() {
+        var repetisjoner = document.getElementById("inpRep").valueAsNumber;
+        var motstand = document.getElementById("inpMot").valueAsNumber;
+        var ovelse = document.getElementById("selOvelse").value;
+        
+        if (isNaN(repetisjoner) || isNaN(motstand) || !ovelse) {
+          alert("Vennligst fyll ut alle feltene.");
+          return;
+        }
+
+        const dato = new Date().toLocaleDateString();
+        const sett = 1;
+        const volum = repetisjoner * motstand;
+        totalVolum += volum;
+
+        const rad = `<tr><td>${dato}</td><td>${sett}</td><td>${repetisjoner}</td><td>${motstand} kg</td><td>${ovelse}</td></tr>`;        
+        document.getElementById("tabInnhold").innerHTML += rad;
+
+        document.getElementById("totalVolum").textContent = "Totalt volum: " + totalVolum + " kg";
+    
+        document.getElementById("inpRep").value = "";
+        document.getElementById("inpMot").value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Registrere treningsøkt</h2>
+    <span
+      >I denne applikasjonen kan du sette sammen et treningsprogram for en
+      enkelt øvelse i styrketrening</span
+    >
+    <br /><br />
+    <select id="selKropp" onchange="selKropp_onchange()">
+      <option value="">Velg kroppsdel</option>
+      <option value="Armer">Armer</option>
+      <option value="Skuldre">Skuldre</option>
+      <option value="Ben">Ben</option>
+      <option value="Rygg">Rygg</option>
+      <option value="Bryst">Bryst</option>
+    </select>
+    <select id="selOvelse"></select>
+    <br /><br />
+    <table>
+      <tr>
+        <td>Repetisjoner</td>
+        <td><input type="number" id="inpRep" min="1" /></td>
+      </tr>
+      <tr>
+        <td>Motstand (kg)</td>
+        <td><input type="number" id="inpMot" min="1" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="btnRegistrer_onclick()">Registrer</button></td>
+      </tr>
+    </table>
+    <br /><br />
+    <table id="tab">
+      <tr>
+        <th>Dato</th>
+        <th>Sett</th>
+        <th>Repetisjoner</th>
+        <th>Motstand</th>
+        <th>Øvelse</th>
+      </tr>
+      <tbody id="tabInnhold"></tbody>
+    </table>
+    <p id="totalVolum">Totalt volum: 0 kg</p>
+  </body>
+</html>

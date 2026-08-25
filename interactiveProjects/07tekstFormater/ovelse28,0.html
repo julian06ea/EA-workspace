@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øvelse 28</title>
+    <script>
+        function btnUtfor_onclick() {
+            var inpTekst = document.getElementById("inpNavn").value;
+
+            var endretTekst = inpTekst.split(' ').map(function(word) {
+                return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+            }).join(' ');
+
+            document.getElementById("melding").innerText = "Endret navn: " + endretTekst;
+        }
+    </script>
+</head>
+<body>
+    <h1>Formater navn</h1>
+    Skriv inn navn her:<input type="text" id="inpNavn">
+    <button onclick="btnUtfor_onclick()">Utfør</button>
+    <p id="melding"></p>
+</body>
+</html>

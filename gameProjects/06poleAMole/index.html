@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppgave 4 Elias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <h1 id="score">Score: ...</h1>
+    <h3 id="timer">Remaining Time: ...</h1>
+    <div id="board">
+      <img id="plen" src="plen.png">
+      <img id="mole" style="display: none;" src="mole.png">
+    </div>
+    <div id="summary" style="display: none;">
+      <h1>Spill Oppsummering</h1>
+      <h3 id="scoreSummary">Din score ble: </h3>
+    </div>
+    <br>
+    <button id="startGame" style="width: 120px; margin-inline: auto; font-size: 1.5rem;" onClick="startGame()">Start Spill</button>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

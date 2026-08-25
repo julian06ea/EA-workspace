@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Grader</title>
+	<meta charset="utf-8" />
+    <script>
+        function Beregn()
+        {
+            var Grader;
+            try
+            {
+                Grader = document.getElementById("inpGrader").valueAsNumber;
+                if (document.getElementById("sTekst1").innerHTML == "Celsius:")
+                {
+                    Grader = Grader * 9 / 5 + 32;
+                }
+                else //skal det beregnes grader for farenheit
+                {
+                    Grader = (Grader - 32) * 5 / 9;
+                }
+                document.getElementById("sGrader").innerHTML = Grader.toFixed(1);
+
+            }
+            catch (ex)
+            {
+                MessageBox.Show(ex.Message,"Gradomregning", MessageBoxButton.OK );
+                txtGrader.Focus();
+            }
+        }
+
+        function btnBeregn_onclick()
+        {
+            Beregn();
+        }
+
+        function btnSkift_onclick()
+        {
+            if (document.getElementById("sTekst1").innerHTML == "Celsius:")
+            {
+                document.getElementById("sTekst1").innerHTML = "Farenheit:";
+                document.getElementById("sTekst2").innerHTML = "Celsius:";
+            }
+            else
+            {
+                document.getElementById("sTekst1").innerHTML = "Celsius:";
+                document.getElementById("sTekst2").innerHTML = "Farenheit:";
+            }
+            Beregn();
+            document.getElementById("inpGrader").focus();
+        }
+
+        function btnHjelp_onclick()
+        {
+            var tekst;
+            tekst = "Grader beregnes ved å skrive inn verdien og deretter trykke Beregn-knappen. Ønsker du å endre";
+            tekst += " gradtypen, museklikkes Skift gradtype-knappen.";
+
+            alert(tekst);
+        }
+    </script>
+    <style>
+        #btnSkift{position:absolute;top:100px;left:400px; height:50px;width:200px;}
+        #btnBeregn{position:absolute;top:200px;left:400px;}
+        #btnHjelp{position:absolute;top:201px;left:563px;height: 26px;}
+        #sTekst1{position:absolute;top:205px;left:107px;right: 1928px; }
+        #sTekst2{position:absolute;top:241px;left:107px; }
+        #sGrader{position:absolute;top:243px;left:205px; }
+        #inpGrader{position:absolute;top:207px;left:201px; }
+    </style>
+</head>
+<body>
+    <button id="btnSkift" type="button" onclick="btnSkift_onclick()" >Skift grader</button>
+    <span id="sTekst1">Celsius:</span> 
+    <input id="btnBeregn" type="button" value="Beregn" onclick="btnBeregn_onclick()"/>
+    <span id="sTekst2">Fahrenheit:</span>
+    <span id="sGrader">tekstSpan</span>
+    <input id="inpGrader" type="number"/>
+    <input id="btnHjelp" type="submit" value="Hjelp" onclick="btnHjelp_onclick()"/>
+</body>
+</html>

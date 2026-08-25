@@ -1,0 +1,18 @@
+table {
+   margin: 40px;
+   border-collapse: collapse;
+}
+th,
+td {
+   border: 1px solid #d6d3d3;
+   padding: 8px;
+   text-align: right;
+}
+td:nth-child(1) {
+   text-align: left;
+}
+a {
+   padding-left: 20px;
+   color: blueviolet;
+   cursor: pointer;
+}

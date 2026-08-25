@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+canvas {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+.controls {
+    margin-top: 10px;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: lightgray;
+}
+    </style>
+</head>
+<body>
+    <h1>Game of Life</h1>
+    <canvas id="gameCanvas"></canvas>
+    <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+    <script>
+        const gridSize = 20;
+const cellSize = 20;
+let grid = createGrid(gridSize);
+let interval;
+
+function createGrid(size) {
+    return Array.from({ length: size }, () =>
+        Array.from({ length: size }, () => Math.random() < 1 / 3 ? 1 : 0)
+    );
+}
+
+function drawGrid() {
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = gridSize * cellSize;
+    canvas.height = gridSize * cellSize;
+    
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let y = 0; y < gridSize; y++) {
+        for (let x = 0; x < gridSize; x++) {
+            ctx.fillStyle = grid[y][x] ? "black" : "white";
+            ctx.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
+            ctx.strokeRect(x * cellSize, y * cellSize, cellSize, cellSize);
+        }
+    }
+}
+
+function countNeighbors(grid, x, y) {
+    let neighbors = 0;
+    for (let dy = -1; dy <= 1; dy++) {
+        for (let dx = -1; dx <= 1; dx++) {
+            if (dx === 0 && dy === 0) continue;
+            const nx = x + dx;
+            const ny = y + dy;
+            if (nx >= 0 && nx < gridSize && ny >= 0 && ny < gridSize) {
+                neighbors += grid[ny][nx];
+            }
+        }
+    }
+    return neighbors;
+}
+
+function updateGrid() {
+    let newGrid = grid.map((row, y) =>
+        row.map((cell, x) => {
+            const neighbors = countNeighbors(grid, x, y);
+            if (cell === 1) {
+                return neighbors < 2 || neighbors > 3 ? 0 : 1;
+            } else {
+                return neighbors === 3 ? 1 : 0;
+            }
+        })
+    );
+    grid = newGrid;
+    drawGrid();
+}
+
+document.getElementById("gameCanvas").addEventListener("click", (event) => {
+    const rect = event.target.getBoundingClientRect();
+    const x = Math.floor((event.clientX - rect.left) / cellSize);
+    const y = Math.floor((event.clientY - rect.top) / cellSize);
+    grid[y][x] = grid[y][x] ? 0 : 1;
+    drawGrid();
+});
+
+document.getElementById("startBtn").addEventListener("click", () => {
+    if (!interval) {
+        interval = setInterval(updateGrid, 500);
+    }
+});
+
+document.getElementById("stopBtn").addEventListener("click", () => {
+    clearInterval(interval);
+    interval = null;
+});
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+    grid = createGrid(gridSize);
+    drawGrid();
+});
+
+drawGrid();
+    </script>
+</body>
+</html>

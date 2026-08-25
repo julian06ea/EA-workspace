@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Øvelse 6</title>
+	<meta charset="utf-8" />
+    <script>
+        function btnBeregn_onclick() {
+            var inpLonn, inpMaterialer, uMva, mva, mMva;
+            
+            inpLonn = document.getElementById("inpLonn").valueAsNumber;
+            inpMaterialer = document.getElementById("inpMaterialer").valueAsNumber;
+
+            uMva = inpLonn + inpMaterialer;
+            mva = (25*uMva)/100;
+            mMva = uMva + mva;
+
+
+            document.getElementById("sLonn").innerHTML = inpLonn;
+            document.getElementById("sMaterialer").innerHTML = inpMaterialer;
+            document.getElementById("sPrisUmva").innerHTML = uMva;
+            document.getElementById("sMva").innerHTML = mva;
+            document.getElementById("sPrisMmva").innerHTML = mMva;
+        } 
+        
+        function btnNy_onclick() { 
+            document.getElementById("inpLonn").value = ""; 
+            document.getElementById("inpMaterialer").value = ""; 
+            document.getElementById("inpLonn").focus(); 
+            document.getElementById("sLonn").innerHTML = ""; 
+            document.getElementById("sMaterialer").innerHTML = ""; 
+            document.getElementById("sPrisUmva").innerHTML = ""; 
+            document.getElementById("sMva").innerHTML = ""; 
+            document.getElementById("sPrisMmva").innerHTML = ""; 
+        }
+    </script>
+    <style type="text/css">
+        .hoyreJust {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+      <table style="position:absolute;top:100px;left:200px;">
+        <tr>
+            <td>Lønn: </td>
+            <td>
+                <input id="inpLonn" type="number" style="width:80px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Materialer: </td>
+            <td>
+                <input id="inpMaterialer" type="number" style="width:80px;"/>
+            </td>
+        </tr>
+        <tr style="height:80px;">
+            <td></td>
+            <td>
+                 <input id="btnBeregn" type="button" value="Beregn" style="margin-right:20px;" onclick="btnBeregn_onclick()" />
+                 <input id="btnNy" type="button" value="Ny" onclick="btnNy_onclick()" />
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANBUD:</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Lønnskostnad</td>
+            <td class="hoyreJust">
+               <span id="sLonn"></span>
+            </td>
+        </tr>
+               <tr>
+            <td>+ Materialer</td>
+            <td class="hoyreJust">
+               <span id="sMaterialer"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Pris u/mva</td>
+            <td class="hoyreJust"   style="border-top:solid thin">
+               <span id="sPrisUmva"></span>
+            </td>
+        </tr>
+        <tr>
+        <td>+ 25% mva</td>
+            <td class="hoyreJust">
+               <span id="sMva"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Pris m/mva</td>
+            <td class="hoyreJust" style="border-top:solid thin;border-bottom:double;">
+               <span id="sPrisMmva"></span>
+            </td>
+        </tr>
+    </table>   
+</body>
+</html>

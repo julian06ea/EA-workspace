@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultattabell</title>
+    <link rel="stylesheet" href="seriekamp.css">
+</head>
+<body>
+    <h1>Resultattabell</h1>
+    <span>Hjemmekamp:</span> <select id="hjemme"></select>
+    <span>Bortekamp:</span>  <select id="borte"></select>
+     <span>Resultat:</span>
+    <input id="kampresultat" type="text">
+    <input type="button" value="Lagre kamp" onclick="btnLagreKamp_onclick()">
+    <a onclick="visKampresultater()">Kampresultater</a>
+    <a onclick="visTabelloversikt()">Tabelloversikt</a>
+    <table id="melding"></table>
+
+    <script src="seriekamp.js"></script>
+</body>
+</html>

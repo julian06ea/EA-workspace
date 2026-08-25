@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stil.css">
+  <title>Huskeliste</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Huskeliste</h1>
+    <input type="text" id="oppgavetekst" placeholder="Hva må du gjøre?" required>
+    <button id="btnLeggTil">Legg til</button>
+    <div id="buttons">
+        <button class="visHuskeliste" data-param="0">Alle</button>
+        <button class="visHuskeliste" data-param="1">Fullførte</button>
+        <button class="visHuskeliste" data-param="2">Ikke fullførte</button>
+    </div>
+    <ul id="huskeListe"></ul>
+  </div>
+  <script src="kode.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes-
++ matvareID: int
++ antall :int
++ dato : date
+--</help_text><element><id>UMLClass</id><coordinates><x>10</x><y>10</y><w>170</w><h>220</h></coordinates><panel_attributes>Lag
+--
++ lagID : int
++ navn: string
++ antKamper: int
++ antKamperVunnet: int
++ antKamperUavgjort: int
++ antKamperTapt: int
++ egneMaal: int
++ maalMot: int
++ maalforskjell: int
++ poengsum: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>330</y><w>170</w><h>110</h></coordinates><panel_attributes>Kamp
+-
++ hjemmelagID:int
++ bortelagID: int
++ kampresultat:string
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>220</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=2
+m2=0..30</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element></diagram>
