@@ -1,10 +1,10 @@
-## Stinn, en sosial app
+# Stinn, en sosial app
 Dette prosjektet er et skikkelig vibe-design av en sosial app. Det finnes flere eksempler på app forsøk på en slags tinder for vennegrupper. Synes vi trengte en mer fargerik morsom app. Åpenbart er dette konsept og helt i start-fase. 
 
 Illustrasjon her, lagd i Figma.
 [App kart](/designProjects/02stinn/08fullMap.png)
 
-# Om navnet: Stinn
+## Om navnet: Stinn
 Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smmoth navn å uttale. 
 Fant kjapt ut at det kunne ha flere betydninger som passer fint til denne appen. 
 "Her er det helt stinn" Helt full stappet, som et utested.
@@ -19,7 +19,7 @@ Eller så kan man bare velge ut spesifikke i en gruppe for å bli kjent over mel
 Ønsker også å promotere enkelte utested og sette søkelys på hvor utrolig mye sosialt man kan delta i. 
 [Arrangement](/designProjects/02stinn/04arrangement.png)
 
-# Rolle inndeling
+## Rolle inndeling
 Har forsøkt å dele inn roller i oppdiktede strekmenn fargefigurer for å få frem et slags Stinn team. 
 
 Sander - App manageren / vedlikeholderen (Hvit) <br>
@@ -30,15 +30,15 @@ Nora - En slags assistent som senere skal innlede appen til nye brukere for å s
 Sjekk ut
 [Om Oss](/designProjects/02stinn/06omOss.png)
 
-# Rød tråd
+## Rød tråd
 Fargene er alltid samme rekkefølge, og hver farge representerer en ting. Prikken oppe i høyre hjørne skal representere status / gi oversikt over hvor du befinner deg. 
 
-# Fremtidige arbeids oppgaver
-Utvkle en bedre hovedside <br>
-Fikse alle kanter rundt de fargede "led bar"- inspirert av aspera light tubes og tegninger med photoshop og ai for å få frem en mye mer clean <br>
-Ved mer erfaring, kode alt, med ai som hjelpemiddel ikke for å få en fullstending løsning. <br>
-Lage animasjoner med de fire strek menn til en rå sang. <br>
-Promotere app på tik tok og alle på UiO og håpe den tar av i Oslo. <br>
+## Fremtidige arbeids oppgaver
+1 Utvkle en bedre hovedside <br>
+2 Fikse alle kanter rundt de fargede "led bar"- inspirert av aspera light tubes og tegninger med photoshop og ai for å få frem en mye mer clean <br>
+3 Ved mer erfaring, kode alt, med ai som hjelpemiddel ikke for å få en fullstending løsning. <br>
+4 Lage animasjoner med de fire strek menn til en rå sang. <br>
+5 Promotere app på tik tok og alle på UiO og håpe den tar av i Oslo. <br>
 
 
 
