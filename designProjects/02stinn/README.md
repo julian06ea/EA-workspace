@@ -23,8 +23,8 @@ Eller så kan man bare velge ut spesifikke i en gruppe for å bli kjent over mel
 Har forsøkt å dele inn roller i oppdiktede strekmenn fargefigurer for å få frem et slags Stinn team. 
 
 Sander - App manageren / vedlikeholderen (Hvit) <br>
-Tuva - Skal styre med trender og arrengement oversikt (Blå)
-Ivar - Fokus rundt trygge rammer online, og data sikkerhet. (Gul) 
+Tuva - Skal styre med trender og arrengement oversikt (Blå) <br>
+Ivar - Fokus rundt trygge rammer online, og data sikkerhet. (Gul) <br>
 Nora - En slags assistent som senere skal innlede appen til nye brukere for å sette opp brukere. (Lilla) 
 
 Sjekk ut
