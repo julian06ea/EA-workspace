@@ -14,7 +14,7 @@ Rett å slett for å lage en stinn fest.
 Eller så kan man bare velge ut spesifikke i en gruppe for å bli kjent over meldinger. 
 
 Ønsker også å promotere enkelte utested og sette søkelys på hvor utrolig mye sosialt man kan delta i. 
-[Arrengement](/designProjects/02stinn/04arrengement.png)
+[Arrangement](/designProjects/02stinn/04arrangement.png)
 
 # Rolle inndeling
 Har forsøkt å dele inn roller i oppdiktede strekmenn fargefigurer for å få frem et slags Stinn team. 
