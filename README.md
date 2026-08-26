@@ -1,6 +1,7 @@
 # Projects
 
 A collection of projects from school work and personal projects. Organized into 5 different categories.
+Each category folder contains numbered projects. Check them out to see what I've built.
 
 ## Categories
 
@@ -22,4 +23,5 @@ A collection of projects from school work and personal projects. Organized into 
 - Adobe 
 - Figma
 
-Each category folder contains numbered projects. Check them out to see what I've built.
+
+
