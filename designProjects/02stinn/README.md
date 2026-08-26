@@ -1,6 +1,9 @@
 ## Stinn, en sosial app
 Dette prosjektet er et skikkelig vibe-design av en sosial app. Det finnes flere eksempler på app forsøk på en slags tinder for vennegrupper. Synes vi trengte en mer fargerik morsom app. Åpenbart er dette konsept og helt i start-fase. 
 
+Fin illustrering her, lagd i Figma.
+[Helt kart](/designProjects/02stinn/08fullMap.png)
+
 # Om navnet: Stinn
 Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smmoth navn å uttale. 
 Fant kjapt ut at det kunne ha flere betydninger som passer fint til denne appen. 
