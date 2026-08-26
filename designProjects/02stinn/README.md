@@ -34,11 +34,11 @@ Sjekk ut
 Fargene er alltid samme rekkefølge, og hver farge representerer en ting. Prikken oppe i høyre hjørne skal representere status / gi oversikt over hvor du befinner deg. 
 
 # Fremtidige arbeids oppgaver
-Utvkle en bedre hovedside 
-Fikse alle kanter rundt de fargede "led bar"- inspirert av aspera light tubes og tegninger med photoshop og ai for å få frem en mye mer clean
-Ved mer erfaring, kode alt, med ai som hjelpemiddel ikke for å få en fullstending løsning. 
-Lage animasjoner med de fire strek menn til en rå sang.  
-Promotere app på tik tok og alle på UiO og håpe den tar av i Oslo.
+Utvkle en bedre hovedside <br>
+Fikse alle kanter rundt de fargede "led bar"- inspirert av aspera light tubes og tegninger med photoshop og ai for å få frem en mye mer clean <br>
+Ved mer erfaring, kode alt, med ai som hjelpemiddel ikke for å få en fullstending løsning. <br>
+Lage animasjoner med de fire strek menn til en rå sang. <br>
+Promotere app på tik tok og alle på UiO og håpe den tar av i Oslo. <br>
 
 
 
