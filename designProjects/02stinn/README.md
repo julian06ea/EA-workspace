@@ -31,7 +31,7 @@ Sjekk ut
 [Om Oss](/designProjects/02stinn/06omOss.png)
 
 # Rød tråd
-Fargene er alltid samme rekkefølge, og hver farge representerer en ting. 
+Fargene er alltid samme rekkefølge, og hver farge representerer en ting. Prikken oppe i høyre hjørne skal representere status / gi oversikt over hvor du befinner deg. 
 
 # Fremtidige arbeids oppgaver
 Utvkle en bedre hovedside 
