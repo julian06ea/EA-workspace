@@ -24,6 +24,7 @@ Ivar - Fokus rundt trygge rammer online, og data sikkerhet. (Gul)
 Nora - En slags assistent som senere skal innlede appen til nye brukere for å sette opp brukere. (Lilla) 
 
 sjekk ut 
+[Arrengement](/designProjects/02stinn/arrengement.png)
 [Om Oss](/designProjects/02stinn/06omOss.png)
 
 # Rød tråd
