@@ -24,7 +24,7 @@ Ivar - Fokus rundt trygge rammer online, og data sikkerhet. (Gul)
 Nora - En slags assistent som senere skal innlede appen til nye brukere for å sette opp brukere. (Lilla) 
 
 sjekk ut 
-[Om Oss](./designProjects/02stinn/06omOss.png)
+[Om Oss](/designProjects/02stinn/06omOss.png)
 
 # Rød tråd
 Fargene er alltid samme rekkefølge, og hver farge representerer en ting. 
