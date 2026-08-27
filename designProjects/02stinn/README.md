@@ -33,12 +33,20 @@ Sjekk ut
 ## Rød tråd
 Fargene er alltid samme rekkefølge, og hver farge representerer en ting. Prikken oppe i høyre hjørne skal representere status / gi oversikt over hvor du befinner deg. 
 
+# Flere brainstorm ideer
+Stinn + 
+Snapchat hotkey i meldinger
+Arrangør til vors kan legge til Features, f eks høytalere, lys, takterrase, dj osv. 
+En leaderbord side for hver by
+
+
 ## Fremtidige arbeids oppgaver
 1 Utvkle en bedre hovedside <br>
 2 Fikse alle kanter rundt de fargede "led bar"- inspirert av aspera light tubes og tegninger med photoshop og ai for å få frem en mye mer clean <br>
 3 Ved mer erfaring, kode alt, med ai som hjelpemiddel ikke for å få en fullstending løsning. <br>
 4 Lage animasjoner med de fire strek menn til en rå sang. <br>
-5 Promotere app på tik tok og alle på UiO og håpe den tar av i Oslo. <br>
+5 Promotere app på tik tok og dele ut QR kode til alle på UiO så den får et godt grunnlagn <br>
+Håpe den tar av i Oslo. <br>
 
 
 
