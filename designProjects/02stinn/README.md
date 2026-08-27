@@ -21,8 +21,7 @@ Eller så kan man bare velge ut spesifikke i en gruppe for å bli kjent over mel
 
 ## Rolle inndeling
 Har forsøkt å dele inn roller i oppdiktede strekmenn fargefigurer for å få frem et slags Stinn team. 
-
-<h4>S</h4>ander - App manageren / vedlikeholderen (Hvit) <br>
+<h4 style="display: inline;">S</h4>ander - App manageren / vedlikeholderen (Hvit) <br>
 <h4>T</h4>uva - Skal styre med trender og arrengement oversikt (Blå) <br>
 <h4>I</h4>var - Fokus rundt trygge rammer online, og data sikkerhet. (Gul) <br>
 <h4>N</h4>ora - En slags assistent som senere skal innlede appen til nye brukere for å sette opp brukere. (Lilla) 
