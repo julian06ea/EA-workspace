@@ -7,9 +7,9 @@ Illustrasjon her, lagd i Figma.
 ## Om navnet: Stinn
 Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smmoth navn å uttale.  <br>
 Fant kjapt ut at det kunne ha flere betydninger som passer fint til denne appen.  <br>
-"Her er det helt stinn" Helt full stappet, som et utested. <br>
-"Stinn av energi" Fullt av energi  <br>
-"Stinn fest" "Sprengfull fest"  <br>
+"Her er det helt stinn" = Helt full stappet, som et utested. <br>
+"Stinn av energi" = Fullt av energi  <br>
+"Stinn fest" = Sprengfull fest  <br>
 
 Det beskriver fint appens intensjon om å finne nye vennegrupper, invitere hele grupper til vors, utesteder eller nach.  <br>
 Rett å slett for å lage en stinn fest.  <br>
@@ -22,7 +22,7 @@ Eller så kan man bare velge ut spesifikke i en gruppe for å bli kjent over mel
 ## Rolle inndeling
 Har forsøkt å dele inn roller i oppdiktede strekmenn fargefigurer for å få frem et slags Stinn team. 
 
-Sander - App manageren / vedlikeholderen (Hvit) <br>
+<mark>S</mark>ander - App manageren / vedlikeholderen (Hvit) <br>
 Tuva - Skal styre med trender og arrengement oversikt (Blå) <br>
 Ivar - Fokus rundt trygge rammer online, og data sikkerhet. (Gul) <br>
 Nora - En slags assistent som senere skal innlede appen til nye brukere for å sette opp brukere. (Lilla) 
