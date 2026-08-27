@@ -41,7 +41,7 @@ En leaderbord side for hver by  <br>
 
 ## Fremtidige arbeids oppgaver
 1 Utvkle en bedre hovedside <br>
-2 Fikse alle kanter rundt de fargede "led bar"- inspirert av aspera light tubes og tegninger med photoshop og ai for å få frem en mye mer clean <br>
+2 Fikse alle kanter rundt de fargede "led bar"- i adobe og tegningene med photoshop for å få frem en mye mer clean look <br>
 3 Ved mer erfaring, kode alt, med ai som hjelpemiddel ikke for å få en fullstending løsning. <br>
 4 Lage animasjoner med de fire strek menn til en rå sang. <br>
 5 Promotere app på tik tok og dele ut QR kode til alle på UiO så den får et godt grunnlagn <br>
