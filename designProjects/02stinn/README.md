@@ -5,14 +5,14 @@ Illustrasjon her, lagd i Figma.
 [App kart](/designProjects/02stinn/08fullMap.png)
 
 ## Om navnet: Stinn
-Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smmoth navn å uttale. 
-Fant kjapt ut at det kunne ha flere betydninger som passer fint til denne appen. 
-"Her er det helt stinn" Helt full stappet, som et utested.
-"Stinn av energi" Fullt av energi
-"Stinn fest" "Sprengfull fest"
+Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smmoth navn å uttale.  <br>
+Fant kjapt ut at det kunne ha flere betydninger som passer fint til denne appen.  <br>
+"Her er det helt stinn" Helt full stappet, som et utested. <br>
+"Stinn av energi" Fullt av energi  <br>
+"Stinn fest" "Sprengfull fest"  <br>
 
-Det beskriver fint appens intensjon om å finne nye vennegrupper, invitere hele grupper til vors, utesteder eller nach. 
-Rett å slett for å lage en stinn fest. 
+Det beskriver fint appens intensjon om å finne nye vennegrupper, invitere hele grupper til vors, utesteder eller nach.  <br>
+Rett å slett for å lage en stinn fest.  <br>
 
 Eller så kan man bare velge ut spesifikke i en gruppe for å bli kjent over meldinger. 
 
@@ -34,10 +34,10 @@ Sjekk ut
 Fargene er alltid samme rekkefølge, og hver farge representerer en ting. Prikken oppe i høyre hjørne skal representere status / gi oversikt over hvor du befinner deg. 
 
 # Flere brainstorm ideer
-Stinn + 
-Snapchat hotkey i meldinger
-Arrangør til vors kan legge til Features, f eks høytalere, lys, takterrase, dj osv. 
-En leaderbord side for hver by
+Stinn + (betalt abbonement)  <br>
+Snapchat hotkey i meldinger  <br>
+Arrangør til vors kan legge til Features, f eks høytalere, lys, takterrase, dj osv.  <br>
+En leaderbord side for hver by  <br>
 
 
 ## Fremtidige arbeids oppgaver
