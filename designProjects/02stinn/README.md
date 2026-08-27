@@ -5,7 +5,7 @@ Illustrasjon her, lagd i Figma.
 [App kart](/designProjects/02stinn/08fullMap.png)
 
 ## Om navnet: Stinn
-Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smmoth navn å uttale.  <br>
+Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smooth navn å uttale.  <br>
 Fant kjapt ut at det kunne ha flere betydninger som passer fint til denne appen.  <br>
 "Her er det helt stinn" = Helt full stappet, som et utested. <br>
 "Stinn av energi" = Fullt av energi  <br>
