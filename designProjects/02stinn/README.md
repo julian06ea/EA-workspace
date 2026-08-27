@@ -48,6 +48,11 @@ En leaderbord side for hver by  <br>
 5 Promotere app på tik tok og dele ut QR kode til alle på UiO så den får et godt grunnlagn <br>
 Håpe den tar av i Oslo. <br>
 
+<mark style="background-color: #FFFFFF">S</mark>ander - App manageren / vedlikeholderen (Hvit) <br>
+<mark style="background-color: #3b82f6;">T</mark>uva - Skal styre med trender og arrengement oversikt (Blå) <br>
+<mark style="background-color: #fbbf24;">I</mark>var - Fokus rundt trygge rammer online, og data sikkerhet (Gul) <br>
+<mark style="background-color: #a855f7;">N</mark>ora - En slags assistent som senere skal innlede appen til nye brukere for å sette opp brukere (Lilla)
+
 
 
 
