@@ -29,7 +29,7 @@ N-ora - En slags assistent som senere skal innlede appen til nye brukere for å 
 Sjekk ut
 [Om Oss](/designProjects/02stinn/06omOss.png)
 
-## Rød tråd
+# Rød tråd
 Fargene er alltid samme rekkefølge, og hver farge representerer en ting. Prikken oppe i høyre hjørne skal representere status / gi oversikt over hvor du befinner deg. 
 
 # Flere brainstorm ideer
@@ -39,7 +39,7 @@ Arrangør til vors kan legge til Features, f eks høytalere, lys, takterrase, dj
 En leaderbord side for hver by  <br>
 
 
-## Fremtidige arbeids oppgaver
+# Fremtidige arbeids oppgaver
 1 Utvkle en bedre hovedside <br>
 2 Fikse alle kanter rundt de fargede "led bar"- i adobe og tegningene med photoshop for å få frem en mye mer clean look <br>
 3 Ved mer erfaring, kode alt, med ai som hjelpemiddel ikke for å få en fullstending løsning. <br>
