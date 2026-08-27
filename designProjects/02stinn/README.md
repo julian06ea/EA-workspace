@@ -20,7 +20,7 @@ Eller så kan man bare velge ut spesifikke i en gruppe for å bli kjent over mel
 [Arrangement](/designProjects/02stinn/04arrangement.png)
 
 ## Rolle inndeling
-Har forsøkt å dele inn roller i oppdiktede strekmenn fargefigurer for å få frem et slags Stinn team. 
+Har forsøkt å dele inn roller i oppdiktede strekmenn fargefigurer for å få frem et slags Stinn team. <br>
 *S* Sander - App manageren / vedlikeholderen (Hvit) <br>
 *T* Tuva - Skal styre med trender og arrengement oversikt (Blå) <br>
 *I* Ivar - Fokus rundt trygge rammer online, og data sikkerhet. (Gul) <br>
