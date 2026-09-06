@@ -2,7 +2,7 @@
 Dette prosjektet er et skikkelig vibe-design av en sosial app. Det finnes flere eksempler på app forsøk på en slags tinder for vennegrupper. Synes vi trengte en mer fargerik morsom app. Åpenbart er dette bare konsept i start-fase som jeg vurderer å kode. 
 
 Illustrasjon her
-[App kart](/Bilder/StinnFuture.png)
+[App kart](./Bilder/StinnFuture.png)
 
 ## Om navnet: Stinn
 Stinn kom rett fra ungdoms-slang Schtinn som gir appen et smooth navn å uttale.  <br>
