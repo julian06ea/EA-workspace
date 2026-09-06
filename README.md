@@ -16,10 +16,14 @@ Each category folder contains numbered projects. Check them out to see what I've
 - HTML, CSS, JavaScript
 
 **Backend**
-- PHP
+- PHP, SQL, Python
 
 **Design & Tools**
 - Adobe 
 - Figma
+- VS code
 
+**AI**
+- Claude 
+- Chat GPT
 
