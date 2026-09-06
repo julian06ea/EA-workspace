@@ -10,13 +10,15 @@ Foreløpig er dette kun et script hos meg. Har det travelt med deltidsjobb og un
 
 Tilbake til hvordan jeg gjør dette økonomisk. Apple shortcut bruker jeg for å navngi opptakene på en spesifikk måte slik at Claude klarer å forstå hva som hører til hvilket dokument. Hver gang jeg lagrer egne notat dokumenter lagrer jeg slik "Fagkode_dd.mm.yy". Eks EXPHIL03_28.08.26. Dermed blir opptaket navngitt identisk automatisk etter ett fingertrykk ved apple shortcut. Det ser slik ut.
 
-<img src="Bilder/aktiv.PNG" width="25%">
-<img src="Bilder/detalj.PNG" width="25%">
+<p>
+  <img src="Bilder/aktiv.PNG" width="25%">
+  <img src="Bilder/detalj.PNG" width="25%">
+</p>
 
-<br>
-
-<img src="Bilder/detalj2.PNG" width="25%">
-<img src="Bilder/filer.PNG" width="25%">
+<p>
+  <img src="Bilder/detalj2.PNG" width="25%">
+  <img src="Bilder/filer.PNG" width="25%">
+</p>
 
 Deretter runner jeg dette på terminal ett python script som jeg og Claude har utarbeidet. Transkripsjonen skjer via lokal Whisper base model (gratis, bare CPU-tid). Her kan man sette opp at den heller som jeg sa tidligere at det kjøres globalt for mer penger, fordel da bruker den veldig kort tid.  For analyse bruker jeg Claude API (~0.3kr per run). Her kjører jeg modell Haiku 4.5. Ikke den idelle men den er rask og billig.  
 
