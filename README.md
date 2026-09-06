@@ -1,6 +1,7 @@
-# Projects
-A collection of projects from school work and personal projects. Organized into 5 different categories.
-Each category folder contains numbered projects. Check them out to see what I've built.
+# Prosjekter
+En samling av prosjekter fra skole og private prosjekter. Organisert i 5 kategorier.
+
+Hver kategorimappe inneholder nummererte prosjekter.
 
 ## Categories
 
@@ -13,17 +14,21 @@ Each category folder contains numbered projects. Check them out to see what I've
 ## Tech
 
 **Frontend**
-- HTML, CSS, JavaScript
+
+HTML, CSS, JavaScript
 
 **Backend**
-- PHP, SQL, Python
+
+PHP, SQL, Python
 
 **Design & Tools**
-- Adobe 
-- Figma
-- VS code
+
+Adobe
+Figma
+VS Code
 
 **AI**
-- Claude 
-- Chat GPT
+
+Claude API
+ChatGPT
 
