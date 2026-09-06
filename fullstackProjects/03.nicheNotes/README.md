@@ -22,15 +22,17 @@ Tilbake til hvordan jeg gjør dette økonomisk. Apple shortcut bruker jeg for å
 
 Deretter runner jeg dette på terminal ett python script som jeg og Claude har utarbeidet. Transkripsjonen skjer via lokal Whisper base model (gratis, bare CPU-tid). Her kan man sette opp at den heller som jeg sa tidligere at det kjøres globalt for mer penger, fordel da bruker den veldig kort tid.  For analyse bruker jeg Claude API (~0.3kr per run). Her kjører jeg modell Haiku 4.5. Ikke den idelle men den er rask og billig.  
 
-![terminal](Bilder/terminal.PNG)
+<img src="Bilder/terminal.PNG" width="55%">
 
-Sjekk det ut her: NB dette scriptet er ikke klart for egen bruk. 
+Sjekk det ut her: NB dette scriptet er ikke klart for egen bruk.  
 [Python script](03nicheNotes/NicheNotes.py)
 
-# Resultat? 
-[In_action](Bilder/inAction01.png)
-[In_action](Bilder/inAction02.png)
+# Resultat?
 
+<p>
+  <img src="Bilder/inAction01.png" width="45%">
+  <img src="Bilder/inAction02.png" width="45%">
+</p>
 
 # Oppsumert i 3 enkle steg
 Steg 1: Del opptak til filer (Apple icloud) 
