@@ -22,6 +22,7 @@ Tilbake til hvordan jeg gjør dette økonomisk. Apple shortcut bruker jeg for å
 
 Deretter runner jeg dette på terminal ett python script som jeg og Claude har utarbeidet. Transkripsjonen skjer via lokal Whisper base model (gratis, bare CPU-tid). Her kan man sette opp at den heller som jeg sa tidligere at det kjøres globalt for mer penger, fordel da bruker den veldig kort tid.  For analyse bruker jeg Claude API (~0.3kr per run). Her kjører jeg modell Haiku 4.5. Ikke den idelle men den er rask og billig.  
 
+(Dette er bilde fra en tidligere versjon) 
 <img src="Bilder/terminal.png" width="55%">
 
 Sjekk det ut her: NB dette scriptet er ikke klart for egen bruk.  
