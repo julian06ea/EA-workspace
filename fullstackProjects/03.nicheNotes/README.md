@@ -26,7 +26,7 @@ Deretter runner jeg dette på terminal ett python script som jeg og Claude har u
 <img src="Bilder/terminal.png" width="55%">
 
 Sjekk det ut her: NB dette scriptet er ikke klart for egen bruk.  
-[Python script](/NicheNotes.py)
+[Python script](./NicheNotes.py)
 
 # Resultat?
 
