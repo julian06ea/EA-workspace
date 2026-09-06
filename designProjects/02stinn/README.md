@@ -29,7 +29,7 @@ N-ora - En slags assistent som senere skal innlede appen til nye brukere for å 
 Fargene er alltid samme rekkefølge, og hver farge representerer en ting. Prikken oppe i høyre hjørne skal representere status / gi oversikt over hvor du befinner deg. 
 
 # Flere brainstorm ideer
-Stinn + (betalt abbonement)  <br>
+Stinn + (betalt abonnement)  <br>
 Snapchat hotkey i meldinger  <br>
 Arrangør kan legge til Features, f eks høytalere, lys, takterrase, dj osv.  <br>
 En leaderbord side for hver by  <br>
@@ -38,11 +38,11 @@ En leaderbord side for hver by  <br>
 1 Utvkle en bedre hovedside <br>
 2 Fikse alle kanter rundt de fargede "led bar"- i adobe og tegningene med photoshop for å få frem en mye mer clean look <br>
 3 Kode alt <br>
-4 Lage animasjoner for last inn siden og market ad med de fire strek menn til en rå sang. <br>
-5 Ordne et system på kryptering og meldingsoverføring  <br>
+4 Lage animasjoner for "art work" på last inn siden og lage animasjon marketing ad med de fire strek menn til en rå sang. <br>
+5 Finne gode løsning på melding system og data sikkerhet  <br>
 
 # Min workflow 
-Lage ideen i Figma. Fin justere alt med ai eller adobe photoshop. 
+Lage ideen i Figma. Jeg er ikke så god til å tegne men har klare ideer. Fin justere etterpå alt med ai eller adobe photoshop for å få et slags produkt. 
 [Figma](./Bilder/08fullMap.png)
 
 
