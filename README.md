@@ -1,5 +1,5 @@
 # Prosjekter
-En samling av prosjekter fra skole og private prosjekter. Organisert i 5 kategorier.
+En samling av prosjekter. Organisert i 5 kategorier.
 
 Hver kategorimappe inneholder nummererte prosjekter.
 
