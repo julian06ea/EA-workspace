@@ -43,7 +43,7 @@ En leaderbord side for hver by  <br>
 
 # Min workflow 
 Lage ideen i Figma. Fin justere alt med ai eller adobe photoshop. 
-![Figma](./Bilder/08fullMap.png)
+[Figma](./Bilder/08fullMap.png)
 
 
 
