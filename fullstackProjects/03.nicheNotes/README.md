@@ -1,5 +1,5 @@
 # Niche Notes 
-<img src="Bilder/aktiv.PNG" width="45%">
+<img src="Bilder/logo.png" width="45%">
 En fremtidsrettet AI tool soon to be App. Hva om det var mulig å selv skrive notater i forelesningen og etter hver forelesning AUTOMAGISK få markert i dokumentet ting du misforsto og viktige ting foreleseren snakket om som du glemte helt å notere? Niche Notes kombinerer dine notater med det publiserte tale opptaket fra forelesningen slik at notatene dine strekker seg nærmere 100%. EN kombinasjon av AI transcript, note taker og en agent som jobber i dokumentet ditt. Hils på Niche Notes.
 
 ## Om navnet: Niche Notes
