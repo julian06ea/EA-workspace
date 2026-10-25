@@ -1,6 +1,6 @@
 # start & bye
 
-Two zsh scripts for macOS that open and close my workday. Type one word in Terminal and the Mac sets itself up for what I'm doing, or packs everything away and locks.
+Two zsh scripts made by Claude for macOS that open and close my workday. Type one word in Terminal and the Mac sets itself up for what I'm doing, or packs everything away and locks.
 
 ## What they do
 
