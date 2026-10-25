@@ -1,10 +1,11 @@
 # Prosjekter
-En samling av prosjekter. Organisert i 5 kategorier.
+En samling av prosjekter. Organisert i 6 kategorier.
 
 Hver kategorimappe inneholder nummererte prosjekter.
 
 ## Categories
 
+- [Automation](./automationProjects)
 - [Design](./designProjects)
 - [Frontend](./frontendProjects)
 - [Fullstack](./fullstackProjects)
